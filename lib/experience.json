@@ -1,14 +1,8 @@
 [
   {
-    "company": "SparkStrand",
-    "role": "Fullstack Web Developer",
-    "timeframe": "July 2024 - October 2024",
-    "about": "Developed a full-stack application using Next.js, Prisma, and AWS S3, ensuring responsive design and advanced functionality."
-  },
-  {
-    "company": "Stealth Startup",
-    "role": "Teaching Assistant Intern",
-    "timeframe": "November 2023 - March 2024",
-    "about": "Resolved 1,050+ MERN stack queries and assisted 5,000+ students, achieving a 4.97/5 satisfaction rating."
+    "company": "Wexa AI",
+    "role": "Fullstack Developer",
+    "timeframe": "October 2024 - December 2024",
+    "about": "As a software developer at a product-based startup, I specialize in building scalable web applications with Next.js, React.js, TypeScript, and Python. I integrate APIs using FastAPI, optimize performance with TanStack/React Query, and manage data with MongoDB. I enhance product features based on Figma designs, ensuring seamless user experiences. Experienced in Agile development, I collaborate cross-functionally to meet sprint goals while maintaining high-quality code through disciplined Git workflows."
   }
 ]

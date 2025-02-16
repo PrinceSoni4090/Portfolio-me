@@ -18,7 +18,7 @@ export default function Experience() {
         Experience
       </p>
 
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="mt-12 md:grid-cols-2 gap-6">
         {experienceData.map((e: dataType, i: number) => {
           return (
             <div

@@ -11,9 +11,9 @@ export default function Home() {
 		<>
 			<div className="mx-auto mt-12 flex flex-col gap-24">
 				<AboutLanding />
-				<Skills />
 				<Experience />
 				<HomeProjects />
+				<Skills />
 				<div className="flex flex-col gap-6">
 					<p
 						className={`${gabarito.className} text-2xl text-black dark:text-white`}
