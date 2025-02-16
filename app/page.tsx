@@ -7,26 +7,26 @@ import Footer from "@/components/landing/footer";
 import Skills from "@/components/landing/skiils";
 
 export default function Home() {
-  return (
-    <>
-      <div className="mx-auto mt-12 flex flex-col gap-24">
-        <AboutLanding />
-        <Skills />
-        <Experience />
-        <HomeProjects />
-        <div className="flex flex-col gap-6">
-          <p
-            className={`${gabarito.className} text-2xl text-black dark:text-white`}
-          >
-            Github Contribution
-          </p>
-          <GhActivityCard
-            username="kashyap1ankit"
-            className="text-black dark:text-white"
-          />
-        </div>
-      </div>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<div className="mx-auto mt-12 flex flex-col gap-24">
+				<AboutLanding />
+				<Skills />
+				<Experience />
+				<HomeProjects />
+				<div className="flex flex-col gap-6">
+					<p
+						className={`${gabarito.className} text-2xl text-black dark:text-white`}
+					>
+						Github Contribution
+					</p>
+					<GhActivityCard
+						username="PrinceSoni4090"
+						className="text-black dark:text-white"
+					/>
+				</div>
+			</div>
+			<Footer />
+		</>
+	);
 }
