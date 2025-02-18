@@ -1,40 +1,49 @@
 "use client";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { CgMail } from "react-icons/cg";
-import { CiMonitor } from "react-icons/ci";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import React from "react";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconExchange,
+  IconHome,
+  IconNewSection,
+  IconTerminal2,
+} from "@tabler/icons-react";
+import Image from "next/image";
+import { BsLinkedin } from "react-icons/bs";
+import { FloatingDock } from "../ui/floating-dock";
 
-export default function Footer() {
-	const socials = [
-		{
-			link: "https://x.com/kashyap_tweetts",
-			icon: FaTwitter,
-		},
-		{
-			link: "https://www.linkedin.com/in/ankit-kashyap-coder/",
-			icon: FaGithub,
-		},
+export function Footer() {
+  const links = [
+   
+    {
+      title: "LinkedIn",
+      icon: (
+        <BsLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
 
-		{
-			link: "mailto:kashyap25ankit@gmail.com?subject=Work Enquiry",
-			icon: CgMail,
-		},
-	];
-
-	return (
-		<div className="mt-24 mb-12 flex justify-center">
-			<div className="flex gap-4 ">
-				{socials.map((e, i: number) => {
-					return (
-						<Link key={i} href={e.link}>
-							<e.icon className="size-6 text-black dark:text-white  hover:text-gray-400 dark:hover:text-gray-700" />
-						</Link>
-					);
-				})}
-			</div>
-		</div>
-	);
+    {
+      title: "Twitter",
+      icon: (
+        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+    {
+      title: "GitHub",
+      icon: (
+        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+  ];
+  return (
+    <div className="flex items-center justify-end w-fit">
+      <FloatingDock
+        mobileClassName="translate-y-20"
+        items={links}
+      />
+    </div>
+  );
 }

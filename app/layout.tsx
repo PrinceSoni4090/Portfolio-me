@@ -24,7 +24,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<ReactLenis root>
 				<body
-					className={`${inter.className} font-sans antialiased w-11/12 w-4xl max-w-4xl mx-auto bg-white dark:bg-black text-white`}
+					className={`${inter.className} font-sans antialiased w-11/12 w-4xl max-w-4xl mx-auto bg-white dark:bg-zinc-900 text-white`}
 				>
 					<ThemeProvider
 						attribute={"class"}

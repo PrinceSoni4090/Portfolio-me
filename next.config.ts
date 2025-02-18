@@ -19,6 +19,10 @@ const nextConfig: NextConfig = {
 				protocol: "https",
 				hostname: "sanityesports.vercel.app",
 			},
+			{
+				protocol: "https",
+				hostname: "assets.aceternity.com",
+			},
 		],
 	},
 };

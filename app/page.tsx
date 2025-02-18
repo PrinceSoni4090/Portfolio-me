@@ -3,8 +3,8 @@ import Experience from "@/components/landing/experience";
 import HomeProjects from "@/components/landing/home-project";
 import { gabarito } from "@/public/font";
 import GhActivityCard from "gh-activity-card/components/gh-activity-card";
-import Footer from "@/components/landing/footer";
 import Skills from "@/components/landing/skiils";
+import { Footer } from "@/components/landing/footer";
 
 export default function Home() {
 	return (
@@ -13,7 +13,7 @@ export default function Home() {
 				<AboutLanding />
 				<Experience />
 				<HomeProjects />
-				<Skills />
+				
 				<div className="flex flex-col gap-6">
 					<p
 						className={`${gabarito.className} text-2xl text-black dark:text-white`}
@@ -25,8 +25,8 @@ export default function Home() {
 						className="text-black dark:text-white"
 					/>
 				</div>
+				<Skills />
 			</div>
-			<Footer />
 		</>
 	);
 }

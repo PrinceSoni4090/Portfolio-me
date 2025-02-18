@@ -4,6 +4,8 @@ import Link from "next/link";
 import { BiDownload, BiNotepad } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 import { FaBriefcase } from "react-icons/fa";
+import { FloatingDock } from "../ui/floating-dock";
+import { Footer } from "./footer";
 
 export default function AboutLanding() {
 	return (
@@ -14,26 +16,32 @@ export default function AboutLanding() {
 				</span>
 
 				<div className="relative flex-shrink-1 p-4 md:pt-6 md:p-4 md:order-last order-first">
-					{/* Twitter Profile Link */}
-					<Link
-						href="https://www.linkedin.com/in/prince-soni-102682270/"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20"
-					>
-						{/* Profile Image */}
-						<span className="block w-full h-full relative">
-							<Image
-								src="/HeroImage1.jpg" // Replace with your image path
-								alt="Profile Avatar"
-								fill
-								className="transition duration-500 blur-0 scale-100 bg-gray-100 object-cover"
-								sizes="150vw"
-								quality={100}
-								priority
-							/>
-						</span>
-					</Link>
+					<div className="flex flex-col items-end gap-4">
+						{/* Twitter Profile Link */}
+						<Link
+							href="https://www.linkedin.com/in/prince-soni-102682270/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20"
+						>
+							{/* Profile Image */}
+							<span className="block w-full h-full relative">
+								<Image
+									src="/HeroImage1.jpg" // Replace with your image path
+									alt="Profile Avatar"
+									fill
+									className="transition duration-500 blur-0 scale-100 bg-gray-100 object-cover"
+									sizes="150vw"
+									quality={100}
+									priority
+								/>
+							</span>
+						</Link>
+
+						<div className="z-10 absolute top-40 right-1">
+							<Footer />
+						</div>
+					</div>
 
 					{/* Decorative Lines and Gradients */}
 					<div className="z-0">
