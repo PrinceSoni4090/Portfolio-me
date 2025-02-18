@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiDownload, BiNotepad } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
-import { FaBriefcase } from "react-icons/fa";
+import { FaBriefcase, FaEnvelope } from "react-icons/fa";
 import { FloatingDock } from "../ui/floating-dock";
 import { Footer } from "./footer";
+import HoverButton from "../ui/hover-button";
 
 export default function AboutLanding() {
 	return (
@@ -73,25 +74,26 @@ export default function AboutLanding() {
 			<div className="flex gap-6">
 				<Link
 					href={"mailto:prince4090@gmail.com?subject=Work Enquiry"}
-					className="flex gap-2 font-base px-4 items-center bg-[#0879E7] dark:bg-[#0c1c32] text-white dark:text-[#0879E7]  p-2 w-fit text-sm rounded-md"
 				>
-					<FaBriefcase />
-					<p>Open For Work</p>
-					<BsArrowRight />
+					<HoverButton>
+						<div className="flex gap-2 items-center">
+							<FaEnvelope />
+							<p>Email Me</p>
+						</div>
+					</HoverButton>
 				</Link>
 
 				<Link
 					href={
 						"https://drive.google.com/file/d/1GsBhcDCVi13icY2LoOLrtcJo8aNqMRq4/view?usp=sharing"
 					}
-					className="flex gap-2  px-4 items-center  p-2 w-fit bg-[#0879E7] dark:bg-[#0c1c32] text-white dark:text-[#0879E7] text-sm rounded-md"
-					target="_blank"
-					rel="noopener noreferre"
-					download
 				>
-					<BiNotepad />
-					<p>Resume</p>
-					<BiDownload />
+					<HoverButton>
+						<div className="flex gap-2 items-center">
+							<BiDownload />
+							<p>Resume</p>						
+						</div>
+					</HoverButton>
 				</Link>
 			</div>
 		</div>
