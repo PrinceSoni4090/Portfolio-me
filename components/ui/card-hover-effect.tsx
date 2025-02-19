@@ -37,11 +37,11 @@ export const HoverEffect = ({
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <div className="absolute inset-0 rounded-3xl">
+          <div className="absolute inset-0 rounded-xl">
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.div
-                  className="absolute inset-0 bg-blue-500/20 dark:bg-blue-900/30 rounded-3xl"
+                  className="absolute inset-0 bg-blue-500/20 dark:bg-blue-900/30 rounded-2xl"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{
@@ -59,7 +59,7 @@ export const HoverEffect = ({
             </AnimatePresence>
           </div>
           
-          <div className="relative p-4 rounded-2xl h-full w-full overflow-hidden  border border-gray-300 dark:border-zinc-800 group-hover:border-blue-500/50 dark:group-hover:border-blue-500/50 transition-colors duration-300">
+          <div className="relative p-4 rounded-lg h-full w-full overflow-hidden  border border-gray-300 dark:border-zinc-800 group-hover:border-blue-500/50 dark:group-hover:border-blue-500/50 transition-colors duration-300">
             <div className="w-full h-[200px] relative">
               <Image
                 src={item.image}

@@ -5,6 +5,7 @@ import { gabarito } from "@/public/font";
 import GhActivityCard from "gh-activity-card/components/gh-activity-card";
 import Skills from "@/components/landing/skiils";
 import { Footer } from "@/components/landing/footer";
+import Education from "@/components/landing/education";
 
 export default function Home() {
 	return (
@@ -25,6 +26,7 @@ export default function Home() {
 						className="text-black dark:text-white"
 					/>
 				</div>
+				<Education/>
 				<Skills />
 			</div>
 		</>
