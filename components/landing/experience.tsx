@@ -14,7 +14,7 @@ export default function Experience() {
   return (
     <div id="experience">
       <p
-        className={` text-3xl font- text-black dark:text-white`}
+        className={` font-bold text-2xl md:text-4xl tracking-tight mt- text-black dark:text-white`}
       >
         Experience
       </p>
@@ -35,13 +35,17 @@ export default function Experience() {
                     {e.role}
                   </p>
                 </div>
-                <div className="flex justify-between mt-2">
-                  <p className="text-gray-400 text-lg">{e.company}</p>
-                  <p className="text-gray-400 text-sm">{e.timeframe}</p>
+                <div className="flex justify-between mt-2 ">
+                  <p className="text-xl text-gray-500 dark:text-gray-400">
+                    {e.company}
+                  </p>
+                  <p className=" text-sm text-gray-500 dark:text-gray-400">
+                    {e.timeframe}
+                  </p>
                 </div>
               </div>
               <p
-                className={` text-sm text-gray-600 dark:text-gray-400`}
+                className={` text- text-gray-700 dark:text-gray-400`}
               >
                 {e.about}
               </p>

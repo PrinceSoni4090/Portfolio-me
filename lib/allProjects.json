@@ -1,96 +1,74 @@
 [
   {
-    "name": "JobJunction",
-    "description": "Job portal where user can see job postings & can also post one for community if they know.",
-    "deployed": "jj.10xdevlab.in",
-    "github": "https://github.com/Kashyap1ankit/Jobjunction",
+    "name": "Cloudify Media - AI Saas tool",
+    "description": "CloudifyMedia, an AI SaaS tool for media compression and content-aware cropping. It optimizes images for social media formats using AI, with Prisma ORM and Neon DB for database management.",
+    "deployed": "https://saas-six-iota.vercel.app/home",
+    "github": "https://github.com/PrinceSoni4090/saas",
     "tech": [
-      "Next.js",
-      "Typescript",
-      "Tailwind",
-      "Postgresql",
-      "Authjs",
-      "Framer-Motion",
-      "More..."
+      "TypeScript",
+      "NextJS",
+      "React",
+      "Neon DB",
+      "Prisma",
+      "Shadcn",
+      "Clerk",
+      "Daisy UI"
     ],
-    "image": "https://res.cloudinary.com/ddnkrlfjn/image/upload/v1735482675/jj-logo_jyvy4x.png"
+    "image": "/CloudifyM.png"
   },
   {
-    "name": "Logofy",
-    "description": "Helps to generate professional logos for their company. Describe in few words what you want in the logo and get it as svg",
-    "deployed": "logofy.10xdevlab.in",
-    "github": "/github-not-found",
+    "name": "Mystery Message",
+    "description": "Mystery Mail, a full-stack anonymous messaging app using TypeScript, Next.js, and React. It features NextAuth for secure authentication, MongoDB for scalable storage, and Zod for schema validation.",
+    "deployed": "https://mystrymessage-a6je.vercel.app/",
+    "github": "https://github.com/PrinceSoni4090/mystrymessage",
     "tech": [
-      "Next.js",
-      "Typescript",
-      "Tailwind",
-      "Postgresql",
-      "Framer-Motion",
-      "Replicate Api",
-      "More..."
-    ],
-    "image": "https://res.cloudinary.com/ddnkrlfjn/image/upload/v1735482702/logofy_jk56al.svg"
-  },
-  {
-    "name": "Techtalkies",
-    "description": "Platform where user can come & write blogs. If user don't know what to write then they can use Ai to write blogs by giving topic name",
-    "deployed": "techtalkies.10xdevlab.in",
-    "github": "https://github.com/Kashyap1ankit/Techtalkies",
-    "tech": [
-      "React.js",
-      "Typescript",
-      "Tailwind",
-      "Postgresql",
-      "Honojs",
-      "More..."
-    ],
-    "image": "https://res.cloudinary.com/ddnkrlfjn/image/upload/v1735489606/pexels-photo-993020_wrn7ou.jpg"
-  },
-  {
-    "name": "Gh-Activity-Card",
-    "description": "Npm package that helps developers to showcase their Github contribution in last 1 year. Developed backend for this & integrated frontend",
-    "deployed": "npmjs.com/package/gh-activity-card",
-    "github": "https://github.com/Kashyap1ankit/gh-activity-card",
-    "tech": [
-      "Next.js",
-      "Typescript",
-      "Tailwind",
-      "Nodejs",
-      "Express js",
-      "More..."
-    ],
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qY3zhR-L_urH_bkiZsRSqKE12F6MRwmqHA&s"
-  },
-  {
-    "name": "PayUsVia",
-    "description": "Platform where user signup and they can do transactions with the existing user on website.",
-    "deployed": "paytm-frontend-ankits-projects-5c12be11.vercel.app",
-    "github": "https://github.com/Kashyap1ankit/paytm-frontend",
-    "tech": [
-      "React.js",
-      "Tailwind",
-      "Nodejs",
-      "Express js",
+      "TypeScript",
+      "NextJS",
+      "React",
+      "Zod",
       "MongoDB",
-      "JWT",
-      "More..."
+      "Shadcn",
+      "Next Auth"
     ],
-    "image": "https://res.cloudinary.com/ddnkrlfjn/image/upload/v1735489606/pexels-photo-993020_wrn7ou.jpg"
+    "image": "/MysteryM.png"
   },
   {
-    "name": "Airbnb Clone",
-    "description": "A hotel booking wesbite similar to airbnb. User can signup and see the listings and also see & give reviews on experience",
-    "deployed": null,
-    "github": "https://github.com/Kashyap1ankit/Airbnb",
+    "name": "Post Space",
+    "description": "Post Space, a full-stack web app using React and Appwrite for backend services, authentication, and database management. Utilized Redux Toolkit for state management and integrated a real-time text editor for blogs.",
+    "deployed": "https://post-space.vercel.app/",
+    "github": "https://github.com/PrinceSoni4090/Post-Space",
     "tech": [
-      "Express js",
-      "Css",
-      "Nodejs",
-      "Ejs",
-      "MongoDB",
-      "Passport.js",
-      "More..."
+      "React",
+      "Redux",
+      "Appwrite",
+      "Tailwind Css",
+      "Express"
     ],
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBheFWGH5E1B5B-vdhAOaN7e6HXesAzN-ukA&s"
+    "image": "/PostSpace2.png"
+  },
+  {
+    "name": "Music School UI",
+    "description": "Music School UI, a responsive frontend UI using Next.js and React, with a modern design. Leveraged Aceternity UI and Shadcn for an enhanced visual experience.",
+    "deployed": "https://nextjsmusicproject.vercel.app/",
+    "github": "https://github.com/PrinceSoni4090/nextjsmusicproject",
+    "tech": [
+      "NextJS",
+      "React",
+      "Aceternity UI"
+    ],
+    "image": "/UI.png"
+  },
+  {
+    "name": "Pass Manager",
+    "description": "Pass Manager, a responsive password manager web app using React and Tailwind CSS, with an intuitive UI for securely storing usernames and passwords.",
+    "deployed": "https://passop-eosin.vercel.app/",
+    "github": "https://github.com/PrinceSoni4090/Pass-Manager",
+    "tech": [
+      "React",
+      "Mongo DB",
+      "Tailwind css",
+      "Express"
+    ],
+    "image": "/PassM2.png"
   }
 ]

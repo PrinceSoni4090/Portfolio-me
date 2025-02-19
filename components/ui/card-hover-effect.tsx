@@ -3,7 +3,9 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
+import HoverButton from "./hover-button";
 
 export const HoverEffect = ({
   items,
@@ -24,14 +26,14 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 py-10 gap-4",
+        "grid grid-cols-1 md:grid-cols-2 py-5 gap-4",
         className
       )}
     >
       {items.map((item, idx) => (
         <div
           key={item.name}
-          className="relative group block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full "
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -39,7 +41,7 @@ export const HoverEffect = ({
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.div
-                  className="absolute inset-0 bg-blue-500/20 dark:bg-blue-500/30 rounded-3xl"
+                  className="absolute inset-0 bg-blue-500/20 dark:bg-blue-900/30 rounded-3xl"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{
@@ -57,47 +59,49 @@ export const HoverEffect = ({
             </AnimatePresence>
           </div>
           
-          <div className="relative rounded-2xl h-full w-full p-4 overflow-hidden bg-white dark:bg-neutral-950 border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 dark:group-hover:border-white/[0.2]">
+          <div className="relative p-4 rounded-2xl h-full w-full overflow-hidden  border border-gray-300 dark:border-zinc-800 group-hover:border-blue-500/50 dark:group-hover:border-blue-500/50 transition-colors duration-300">
+            <div className="w-full h-[200px] relative">
+              <Image
+                src={item.image}
+                alt={item.name}
+                fill
+                className="object-cover rounded-xl"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
             <div className="p-4">
-              <div className="flex items-center gap-4">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <h4 className="text-zinc-700 dark:text-zinc-200 font-bold tracking-wide text-base">
-                  {item.name}
-                </h4>
-              </div>
-              <p className="mt-4 text-zinc-600 dark:text-zinc-400 tracking-wide leading-relaxed text-sm">
+              <h4 className="text-gray-900 dark:text-gray-100 font-bold tracking-wide text-base">
+                {item.name}
+              </h4>
+              <p className="mt-4 text-gray-700 dark:text-gray-300 tracking-wide leading-relaxed text-sm">
                 {item.description}
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {item.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-xs"
+                    className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-xs font-medium"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4 mt-4">
+              <div className="flex gap-4 mt-4 justify-center">
                 {item.deployed && (
                   <Link
-                    href={`https://${item.deployed}`}
+                    href={item.deployed}
                     target="_blank"
-                    className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300"
+                    className="text-sm font-medium"
                   >
-                    Live Demo →
+                    <HoverButton>Live Demo</HoverButton>
                   </Link>
                 )}
                 <Link
                   href={item.github}
                   target="_blank"
-                  className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300"
+                  className="text-sm font-medium"
                 >
-                  GitHub →
+                  <HoverButton>GitHub</HoverButton>
                 </Link>
               </div>
             </div>

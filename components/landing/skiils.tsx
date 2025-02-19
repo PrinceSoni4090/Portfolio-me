@@ -126,7 +126,7 @@ export default function Skills() {
   return (
     <div>
       <p
-        className={`${gabarito.className} text-2xl text-black dark:text-white`}
+        className={`font-bold text-2xl md:text-4xl tracking-tight  text-black dark:text-white`}
       >
         Skills
       </p>
