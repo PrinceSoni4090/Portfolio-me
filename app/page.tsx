@@ -26,7 +26,7 @@ export default function Home() {
 						className="text-black dark:text-white"
 					/>
 				</div>
-				<Education/>
+				<Education />
 				<Skills />
 			</div>
 		</>

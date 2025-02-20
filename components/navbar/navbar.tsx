@@ -33,8 +33,16 @@ export default function Navbar() {
 		setTheme(savedTheme);
 	}, [setTheme]);
 
+	const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+		e.preventDefault();
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
-		<div className="flex justify-between items-center fixed top-4 left-1/2 -translate-x-1/2 w-11/12 md:w-1/2">
+		<div className="flex justify-stretch items-center fixed top-4 left-1/2 -translate-x-1/2 w-11/12 md:w-1/2 backdrop-blur-md bg-white/30 dark:bg-black/30 p-3 rounded-full border border-gray-200 dark:border-neutral-800 z-10">
 			{/* Theme Toggle Button */}
 			<div
 				className="dark:bg-black rounded-full p-2 px-3 flex items-center border dark:border-neutral-800 duration-500 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -51,23 +59,24 @@ export default function Navbar() {
 			{/* Navigation Links */}
 			<div className="flex gap-6 px-4 py-2 rounded-full text-sm font-medium bg-white text-black dark:bg-neutral-900 dark:text-white">
 				{navLinks.map((e, i: number) => (
-					<Link
+					<a
 						href={e.link}
 						key={i}
+						onClick={(event) => handleScroll(event, e.link.replace('/#', ''))}
 						className={`hover:text-blue-500 cursor-pointer duration-500`}
 					>
 						{e.name}
-					</Link>
+					</a>
 				))}
 			</div>
 
 			{/* GitHub Link */}
-			<Link
+			{/* <Link
 				href={"https://github.com/Kashyap1ankit"}
 				className="hover:text-sky-700 invert dark:invert-0"
 			>
 				<FaGithub className="size-6" />
-			</Link>
+			</Link> */}
 		</div>
 	);
 }

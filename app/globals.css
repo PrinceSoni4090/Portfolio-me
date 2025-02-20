@@ -18,3 +18,7 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+section {
+  scroll-margin-top: 100px;
+}

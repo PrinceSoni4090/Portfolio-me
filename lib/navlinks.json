@@ -5,10 +5,10 @@
   },
   {
     "name": "Projects",
-    "link": "/projects"
+    "link": "/#projects"
   },
   {
-    "name": "Contribution",
-    "link": "/contributions"
+    "name": "Education",
+    "link": "/#education"
   }
 ]
