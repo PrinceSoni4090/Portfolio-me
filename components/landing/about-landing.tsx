@@ -1,10 +1,7 @@
-import { cousine, gabarito } from "@/public/font";
 import Image from "next/image";
 import Link from "next/link";
-import { BiDownload, BiNotepad } from "react-icons/bi";
-import { BsArrowRight } from "react-icons/bs";
-import { FaBriefcase, FaEnvelope } from "react-icons/fa";
-import { FloatingDock } from "../ui/floating-dock";
+import { BiDownload } from "react-icons/bi";
+import { FaEnvelope } from "react-icons/fa";
 import { Footer } from "./footer";
 import HoverButton from "../ui/hover-button";
 

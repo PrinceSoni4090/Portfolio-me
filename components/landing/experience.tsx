@@ -1,7 +1,5 @@
-import { cousine, gabarito } from "@/public/font";
 import experienceData from "@/lib/experience.json";
 import { BiBriefcase } from "react-icons/bi";
-import { CardSpotlight } from "../ui/card-spotlight";
 
 interface dataType {
   company: string;

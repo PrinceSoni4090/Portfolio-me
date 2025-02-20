@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRight } from "react-icons/bs";
-import Footer from "@/components/landing/footer";
+import {Footer} from "@/components/landing/footer";
 
 export default function Projects() {
   return (

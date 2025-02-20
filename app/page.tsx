@@ -2,10 +2,7 @@
 import AboutLanding from "@/components/landing/about-landing";
 import Experience from "@/components/landing/experience";
 import HomeProjects from "@/components/landing/home-project";
-import { gabarito } from "@/public/font";
-import GhActivityCard from "gh-activity-card/components/gh-activity-card";
 import Skills from "@/components/landing/skiils";
-import { Footer } from "@/components/landing/footer";
 import Education from "@/components/landing/education";
 import GhActivity from "@/components/gh-activity";
 import { useTheme } from "next-themes";

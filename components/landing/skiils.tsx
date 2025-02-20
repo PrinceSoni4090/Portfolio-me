@@ -1,5 +1,4 @@
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { gabarito } from "@/public/font";
 import { RiBearSmileFill } from "react-icons/ri";
 
 import {
@@ -9,21 +8,16 @@ import {
   SiGit,
   SiMongoose,
   SiPrisma,
-  SiRecoil,
   SiTailwindcss,
   SiTypescript,
   SiZod,
-  SiSocketdotio,
   SiNextdns,
-  SiHono,
   SiNextdotjs,
   SiNodedotjs,
   SiDocker,
   SiMongodb,
   SiPostgresql,
   SiGithub,
-  SiBootstrap,
-  SiPassport,
   SiNpm,
 } from "react-icons/si";
 const skills = [

@@ -3,12 +3,7 @@ import React from "react";
 import {
   IconBrandGithub,
   IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
 } from "@tabler/icons-react";
-import Image from "next/image";
 import { BsLinkedin } from "react-icons/bs";
 import { FloatingDock } from "../ui/floating-dock";
 

@@ -1,23 +1,13 @@
 "use client";
-import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
 import navLinks from "@/lib/navlinks.json";
 import {
-	LucideMoon,
-	Moon,
-	MoonIcon,
-	MoonStar,
-	Sun,
-	SunDimIcon,
+	Sun
 } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import { useTheme } from "next-themes";
-import { RiMoonClearFill } from "react-icons/ri";
-import { BsMoon, BsMoonFill } from "react-icons/bs";
-import { CgMoon } from "react-icons/cg";
-
+import {  BsMoonFill } from "react-icons/bs";
 export default function Navbar() {
-	const { setTheme, resolvedTheme } = useTheme();
+	const { setTheme } = useTheme();
 	const [active, setActive] = useState<"light" | "dark">("dark");
 	const [visible, setVisible] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);

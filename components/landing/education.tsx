@@ -1,4 +1,3 @@
-import { cousine, gabarito } from "@/public/font";
 import { PiGraduationCapBold } from "react-icons/pi";
 
 export default function Education() {
