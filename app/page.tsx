@@ -14,8 +14,7 @@ export default function Home() {
 			<div className="mx-auto mt-12 flex flex-col gap-24 mb-10">
 				<AboutLanding />
 				<Experience />
-				<HomeProjects />
-				
+				<HomeProjects />	
 				<div className="flex flex-col gap-6">
 					<p
 						className={`font-bold text-2xl md:text-4xl tracking-tight text-black dark:text-white`}

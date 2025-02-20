@@ -8,13 +8,13 @@ import HoverButton from "../ui/hover-button";
 export default function AboutLanding() {
 	return (
 		<div className="flex flex-col gap-3" id="about">
-			<div className="flex justify-between items-center -mb-3">
-				<span className="relative text-lg md:text-5xl bg-clip-text text-black dark:text-white font-sans font-bold h-fit">
+			<div className="flex flex-col md:flex-row justify-between items-start md:items-center md:-mb-6  ">
+				<span className="relative flex text-3xl md:text-5xl bg-clip-text text-black dark:text-white font-sans font-bold h-fit order-2 md:order-1">
 					Prince Soni
 				</span>
 
-				<div className="relative flex-shrink-1 p-4 md:pt-6 md:p-4 md:order-last order-first">
-					<div className="flex flex-col items-end gap-4">
+				<div className="relative flex-shrink-1 p-4 md:pt-6 md:p-4 order-1 md:order-last">
+					<div className="flex flex-col items-start md:items-end gap-4">
 						{/* Twitter Profile Link */}
 						<Link
 							href="https://www.linkedin.com/in/prince-soni-102682270/"
@@ -82,7 +82,7 @@ export default function AboutLanding() {
 
 				<Link
 					href={
-						"https://drive.google.com/file/d/1GsBhcDCVi13icY2LoOLrtcJo8aNqMRq4/view?usp=sharing"
+						"https://drive.google.com/file/d/1DaBlOXt8xVfA5J-X00re465h98oTVLoD/view?usp=sharing"
 					}
 				>
 					<HoverButton>
