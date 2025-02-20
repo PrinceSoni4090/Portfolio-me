@@ -52,10 +52,6 @@ const skills = [
     icon: <SiExpress className="size-6 text-black dark:text-white" />,
   },
   {
-    title: "Websockets",
-    icon: <SiSocketdotio className="size-6 text-black dark:text-white" />,
-  },
-  {
     title: "PostgresSQL",
     icon: <SiPostgresql className="size-6 text-black dark:text-white" />,
   },
@@ -77,17 +73,10 @@ const skills = [
   },
 
   {
-    title: "Honojs",
-    icon: <SiHono className="size-6 text-black dark:text-white" />,
-  },
-  {
     title: "Git",
     icon: <SiGit className="size-6 text-black dark:text-white" />,
   },
-  {
-    title: "Recoil",
-    icon: <SiRecoil className="size-6 text-black dark:text-white" />,
-  },
+
   {
     title: "Zustand",
     icon: <RiBearSmileFill className="size-6 text-black dark:text-white" />,
@@ -97,17 +86,10 @@ const skills = [
     icon: <SiNextdns className="size-6 text-black dark:text-white" />,
   },
   {
-    title: "Passport.js",
-    icon: <SiPassport className="size-6 text-black dark:text-white" />,
-  },
-  {
     title: "Mongoose",
     icon: <SiMongoose className="size-6 text-black dark:text-white" />,
   },
-  {
-    title: "Bootstrap",
-    icon: <SiBootstrap className="size-6 text-black dark:text-white" />,
-  },
+
   {
     title: "Npm",
     icon: <SiNpm className="size-6 text-black dark:text-white" />,

@@ -18,7 +18,7 @@ export function Footer() {
     {
       title: "LinkedIn",
       icon: (
-        <BsLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <BsLinkedin className="h-full w-full text-neutral-800 dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -26,14 +26,14 @@ export function Footer() {
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-neutral-800 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-neutral-800 dark:text-neutral-300" />
       ),
       href: "#",
     },
