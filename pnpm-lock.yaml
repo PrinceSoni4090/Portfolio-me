@@ -53,6 +53,9 @@ importers:
       react:
         specifier: ^19.0.0
         version: 19.0.0
+      react-activity-calendar:
+        specifier: ^2.7.8
+        version: 2.7.8(react@19.0.0)
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
@@ -1827,8 +1830,8 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-activity-calendar@2.7.5:
-    resolution: {integrity: sha512-sVXqN4wDsjrwdjCJfgrOYP8Q6o8HfMV+lmxn4GQz4gacOwQNXIC9y0Obs5EqNifqZVJqnGSV1dLmPNWFKw4OLA==}
+  react-activity-calendar@2.7.8:
+    resolution: {integrity: sha512-lj9IIMrRAoMsXSf6wWo7AcMNXie61Y5EuNApm6rVdJswngyw8LS2Ja50yHrGBFu9GaL1HMutGIoSbr5ifEi9xw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
@@ -3572,7 +3575,7 @@ snapshots:
     dependencies:
       next: 15.1.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
-      react-activity-calendar: 2.7.5(react@19.0.0)
+      react-activity-calendar: 2.7.8(react@19.0.0)
       react-dom: 19.0.0(react@19.0.0)
       tailwind-merge: 2.6.0
     transitivePeerDependencies:
@@ -4084,7 +4087,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-activity-calendar@2.7.5(react@19.0.0):
+  react-activity-calendar@2.7.8(react@19.0.0):
     dependencies:
       date-fns: 4.1.0
       react: 19.0.0
