@@ -12,7 +12,7 @@ export default function AboutLanding() {
 	return (
 		<div className="flex flex-col gap-3" id="about">
 			<div className="flex justify-between items-center -mb-3">
-				<span className="relative z-10 text-lg md:text-5xl bg-clip-text text-black dark:text-white font-sans font-bold h-fit">
+				<span className="relative text-lg md:text-5xl bg-clip-text text-black dark:text-white font-sans font-bold h-fit">
 					Prince Soni
 				</span>
 

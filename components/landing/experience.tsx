@@ -45,7 +45,7 @@ export default function Experience() {
                 </div>
               </div>
               <p
-                className={` text- text-gray-700 dark:text-gray-400`}
+                className={` text- text-zinc-700 dark:text-zinc-400`}
               >
                 {e.about}
               </p>

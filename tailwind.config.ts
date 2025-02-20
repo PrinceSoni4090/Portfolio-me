@@ -34,6 +34,7 @@ export default {
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
+             animationTimingFunction: "linear"
           },
         },
       },

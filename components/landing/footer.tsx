@@ -42,8 +42,7 @@ export function Footer() {
     <div className="flex items-center justify-end w-fit">
       <FloatingDock
         mobileClassName="translate-y-20"
-        items={links}
-      />
+        items={links} desktopClassName={undefined}      />
     </div>
   );
 }
