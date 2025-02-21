@@ -56,7 +56,7 @@ export const HoverEffect = ({
 						</AnimatePresence>
 					</div>
 
-					<div className="relative p-4 rounded-lg h-full w-full overflow-hidden  border group-hover:border-blue-500/50 dark:group-hover:border-blue-500/50 transition-colors duration-300 shadow-lg">
+					<div className="relative p-4 rounded-lg h-full w-full overflow-hidden border dark:border-neutral-800 group-hover:border-blue-500/50 dark:group-hover:border-blue-500/50 transition-colors duration-300 shadow-lg">
 						{/* <div className="w-full h-[200px] relative">
 							<Image
 								src={item.image}
