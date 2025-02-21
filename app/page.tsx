@@ -6,12 +6,14 @@ import Skills from "@/components/landing/skiils";
 import Education from "@/components/landing/education";
 import GhActivity from "@/components/gh-activity";
 import { useTheme } from "next-themes";
+import { EmailCopyButton } from "@/components/ui/email-copy-button";
+import { Mail } from "lucide-react";
 
 export default function Home() {
 	const { theme } = useTheme();
 	return (
 		<>
-			<div className="mx-auto mt-12 flex flex-col gap-24 mb-10">
+			<div className="mx-auto mt-12 flex flex-col gap-24 mb-12">
 				<AboutLanding />
 				<Experience />
 				<HomeProjects />
@@ -29,9 +31,10 @@ export default function Home() {
 				</div>
 				<Education />
 				<Skills />
-				<div className="flex justify-center gap-6 text-black dark:text-white">
-					<p>prince4090@gmail.com</p>
-				</div>
+				<main className="flex items-center justify-center mt-[-3rem] gap-3">
+					<Mail className="w-6 h-6 text-zinc-700 dark:text-zinc-400" />
+					<EmailCopyButton email="prince4090@gmail.com" />
+				</main>
 			</div>
 		</>
 	);
