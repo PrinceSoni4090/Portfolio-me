@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import AboutLanding from "@/components/landing/about-landing";
 import Experience from "@/components/landing/experience";
 import HomeProjects from "@/components/landing/home-project";
@@ -14,7 +14,7 @@ export default function Home() {
 			<div className="mx-auto mt-12 flex flex-col gap-24 mb-10">
 				<AboutLanding />
 				<Experience />
-				<HomeProjects />	
+				<HomeProjects />
 				<div className="flex flex-col gap-6">
 					<p
 						className={`font-bold text-2xl md:text-4xl tracking-tight text-black dark:text-white`}
@@ -23,12 +23,15 @@ export default function Home() {
 					</p>
 					<GhActivity
 						username="PrinceSoni4090"
-						className="text-black dark:text-white"
-						colorTheme={theme === 'light' ? 'light' : 'dark'}
+						className="text-black dark:text-white shadow-lg"
+						colorTheme={theme === "light" ? "light" : "dark"}
 					/>
 				</div>
 				<Education />
 				<Skills />
+				<div className="flex justify-center gap-6 text-black dark:text-white">
+					<p>prince4090@gmail.com</p>
+				</div>
 			</div>
 		</>
 	);

@@ -1,7 +1,7 @@
 [
   {
     "name": "Cloudify Media - AI Saas tool",
-    "description": "CloudifyMedia, an AI SaaS tool for media compression and content-aware cropping. It optimizes images for social media formats using AI, with Prisma ORM and Neon DB for database management.",
+    "description": "AI SaaS tool for media compression and content-aware cropping,optimizes images for social media",
     "deployed": "https://saas-six-iota.vercel.app/home",
     "github": "https://github.com/PrinceSoni4090/saas",
     "tech": [
@@ -18,7 +18,7 @@
   },
   {
     "name": "Mystery Message",
-    "description": "Mystery Mail, a full-stack anonymous messaging app using TypeScript, Next.js, and React. It features NextAuth for secure authentication, MongoDB for scalable storage, and Zod for schema validation.",
+    "description": "Mystery Mail, a full-stack anonymous messaging app using TypeScript, Next.js, and React",
     "deployed": "https://mystrymessage-a6je.vercel.app/",
     "github": "https://github.com/PrinceSoni4090/mystrymessage",
     "tech": [
@@ -34,7 +34,7 @@
   },
   {
     "name": "Post Space",
-    "description": "Post Space, a full-stack web app using React and Appwrite for backend services, authentication, and database management. Utilized Redux Toolkit for state management and integrated a real-time text editor for blogs.",
+    "description": "Post Space, a full-stack web app for posting photos and blogs",
     "deployed": "https://post-space.vercel.app/",
     "github": "https://github.com/PrinceSoni4090/Post-Space",
     "tech": [
@@ -48,7 +48,7 @@
   },
   {
     "name": "Music School UI",
-    "description": "Music School UI, a responsive frontend UI using Next.js and React, with a modern design. Leveraged Aceternity UI and Shadcn for an enhanced visual experience.",
+    "description": "Music School UI, a responsive frontend UI Aceternity UI and Shadcn",
     "deployed": "https://nextjsmusicproject.vercel.app/",
     "github": "https://github.com/PrinceSoni4090/nextjsmusicproject",
     "tech": [
@@ -57,18 +57,5 @@
       "Aceternity UI"
     ],
     "image": "/UI.png"
-  },
-  {
-    "name": "Pass Manager",
-    "description": "Pass Manager, a responsive password manager web app using React and Tailwind CSS, with an intuitive UI for securely storing usernames and passwords.",
-    "deployed": "https://passop-eosin.vercel.app/",
-    "github": "https://github.com/PrinceSoni4090/Pass-Manager",
-    "tech": [
-      "React",
-      "Mongo DB",
-      "Tailwind css",
-      "Express"
-    ],
-    "image": "/PassM2.png"
   }
 ]
