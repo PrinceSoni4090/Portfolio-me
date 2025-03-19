@@ -78,55 +78,50 @@ export default function Navbar() {
 	}, []);
 
 	return (
-		<div className={`flex justify-stretch items-center fixed shadow-lg top-6 left-1/2 -translate-x-1/2 w-11/12 md:w-1/2 backdrop-blur-md bg-white/30 dark:bg-black/30 p-3 rounded-full border border-gray-200 dark:border-neutral-800 z-10 transition-all duration-300 ${visible ? 'translate-y-0 opacity-100' : '-translate-y-20 opacity-0 '}`}>
-			{/* Theme Toggle Button */}
-			<div
-				className="dark:bg-black rounded-full p-2 px-3 flex items-center  dark:border-neutral-800 duration-500 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800"
-				onClick={toggleTheme}
-			>
-				{active === "light" ? (
-					<BsMoonFill className="w-4 h-4 text-blue-500 fill-black" /> // Colorful sun icon for light mode
-				) : (
-					<Sun className="w-4 h-4 text-yellow-600 fill-current" />
-					// Colorful moon icon for dark mode
-				)}
-			</div>
+		<div className={`flex items-center justify-between fixed shadow-lg top-6 left-1/2 -translate-x-1/2 w-11/12 md:w-1/2 backdrop-blur-md bg-white/30 dark:bg-black/30 p-3 rounded-full border border-gray-200 dark:border-neutral-800 z-10 transition-all duration-300 ${visible ? 'translate-y-0 opacity-100' : '-translate-y-20 opacity-0 '}`}>
+    {/* Theme Toggle Button - Left aligned */}
+    <div className="flex-shrink-0">
+        <div
+            className="dark:bg-black rounded-full p-2 px-3 flex items-center dark:border-neutral-800 duration-500 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800"
+            onClick={toggleTheme}
+        >
+            {active === "light" ? (
+                <BsMoonFill className="w-4 h-4 text-blue-500 fill-black" /> 
+            ) : (
+                <Sun className="w-4 h-4 text-yellow-600 fill-current" />
+            )}
+        </div>
+    </div>
 
-			{/* Navigation Links */}
-			<div 
-				ref={containerRef}
-				className="flex gap-4 px-4 py-2 rounded-full text-sm font-medium bg-white text-black dark:bg-neutral-900 dark:text-white relative overflow-hidden"
-			>
-				<div 
-					className={`absolute transition-all duration-300 ease-in-out h-10 top-1/2 -translate-y-1/2 bg-gray-100 dark:bg-neutral-800 ${
-						hoveredLink !== null ? 'opacity-100' : 'opacity-0'
-					}`}
-					style={{
-						left: `${hoverLeft}px`,
-						width: `${hoverWidth}px`,
-					}}
-				/>
-				{navLinks.map((e, i: number) => (
-					<a
-						href={e.link}
-						key={i}
-						onClick={(event) => handleScroll(event, e.link.replace('/#', ''))}
-						onMouseEnter={(event) => handleHover(i, event)}
-						onMouseLeave={() => setHoveredLink(null)}
-						className="hover:text-blue-500 cursor-pointer duration-500 px-4 py-1 relative z-10"
-					>
-						{e.name}
-					</a>
-				))}
-			</div>
-
-			{/* GitHub Link */}
-			{/* <Link
-				href={"https://github.com/Kashyap1ankit"}
-				className="hover:text-sky-700 invert dark:invert-0"
-			>
-				<FaGithub className="size-6" />
-			</Link> */}
-		</div>
+    {/* Navigation Links - Centered */}
+    <div className="flex justify-center flex-1">
+        <div 
+            ref={containerRef}
+            className="flex gap-4 px-4 py-2 rounded-full text-sm font-medium bg-white text-black dark:bg-neutral-900 dark:text-white relative overflow-hidden"
+        >
+            <div 
+                className={`absolute transition-all duration-300 ease-in-out h-10 top-1/2 -translate-y-1/2 bg-gray-100 dark:bg-neutral-800 ${
+                    hoveredLink !== null ? 'opacity-100' : 'opacity-0'
+                }`}
+                style={{
+                    left: `${hoverLeft}px`,
+                    width: `${hoverWidth}px`,
+                }}
+            />
+            {navLinks.map((e, i: number) => (
+                <a
+                    href={e.link}
+                    key={i}
+                    onClick={(event) => handleScroll(event, e.link.replace('/#', ''))}
+                    onMouseEnter={(event) => handleHover(i, event)}
+                    onMouseLeave={() => setHoveredLink(null)}
+                    className="hover:text-blue-500 cursor-pointer duration-500 px-4 py-1 relative z-10"
+                >
+                    {e.name}
+                </a>
+            ))}
+        </div>
+    </div>
+</div>
 	);
 }
