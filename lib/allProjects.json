@@ -1,5 +1,21 @@
 [
   {
+    "name": "Insightify AI",
+    "description": "Insightify AI, a web app for AI-driven industry insights and interview prep quizzes",
+    "deployed": "https://insightify-ai.vercel.app/",
+    "github": "https://github.com/PrinceSoni4090/Insightify-AI",
+    "tech": [
+      "NextJS",
+      "React",
+      "Neon DB",
+      "Prisma",
+      "Shadcn",
+      "Clerk",
+      "Gemini"
+    ],
+    "image": "/CloudifyM.png"
+  },
+  {
     "name": "Cloudify Media - AI Saas tool",
     "description": "AI SaaS tool for media compression and content-aware cropping,optimizes images for social media",
     "deployed": "https://saas-six-iota.vercel.app/home",
@@ -45,17 +61,5 @@
       "Express"
     ],
     "image": "/PostSpace2.png"
-  },
-  {
-    "name": "Music School UI",
-    "description": "Music School UI, a responsive frontend UI Aceternity UI and Shadcn",
-    "deployed": "https://nextjsmusicproject.vercel.app/",
-    "github": "https://github.com/PrinceSoni4090/nextjsmusicproject",
-    "tech": [
-      "NextJS",
-      "React",
-      "Aceternity UI"
-    ],
-    "image": "/UI.png"
   }
 ]
